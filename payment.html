@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="payment-page">
+
+<div class="payment-box">
+  <h2>Select Payment Method</h2>
+
+  <!-- PAYMENT BUTTONS -->
+  <button class="pay-btn gpay" onclick="showQR()">Google Pay</button>
+  <button class="pay-btn phonepe" onclick="showQR()">PhonePe</button>
+  <button class="pay-btn upi" onclick="showQR()">UPI</button>
+  <button class="pay-btn card" onclick="paySuccess()">Card</button>
+
+  <!-- QR SECTION -->
+  <div id="qrBox" style="display:none;">
+    <h3>Scan & Pay</h3>
+    <img src="images/qr.jpg" class="qr-img">
+    <p>Scan using any UPI app</p>
+
+    <button class="pay-btn gpay" onclick="paySuccess()">
+      Payment Done
+    </button>
+  </div>
+</div>
+
+<script>
+function showQR(){
+  document.getElementById("qrBox").style.display = "block";
+}
+
+function paySuccess(){
+  window.location.href = "success.html";
+}
+</script>
+
+</body>
+</html>

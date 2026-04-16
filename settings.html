@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings | Cafe Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="protect(); loadSettings()">
+
+<nav class="nav">
+  <h2>⚙ Settings</h2>
+  <a href="index.html" class="link">Dashboard</a>
+</nav>
+
+<section class="settings">
+
+  <!-- Cafe Name -->
+  <div class="setting-card">
+    <h3>🏪 Cafe Name</h3>
+    <input type="text" id="cafeName" placeholder="Enter cafe name">
+    <button onclick="saveCafeName()">Save</button>
+  </div>
+
+  <!-- Theme -->
+  <div class="setting-card">
+    <h3>🎨 Theme</h3>
+    <button onclick="setTheme('light')">☀ Light</button>
+    <button onclick="setTheme('dark')">🌙 Dark</button>
+  </div>
+
+  <!-- Data -->
+  <div class="setting-card">
+    <h3>🗑 Data Management</h3>
+    <button onclick="clearOrders()">Clear Current Order</button>
+    <button onclick="clearHistory()">Clear Order History</button>
+  </div>
+
+  <!-- Logout -->
+  <div class="setting-card danger">
+    <h3>🔐 Logout</h3>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

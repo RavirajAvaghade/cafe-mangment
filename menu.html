@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafe Menu | CafePOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="protect()">
+
+<!-- TOP BAR -->
+<nav class="topbar">
+  <span class="hamburger" onclick="toggleMenu()">☰</span>
+  <h2>☕ CafePOS</h2>
+</nav>
+
+<!-- SIDE MENU -->
+<aside class="sidebar" id="sideMenu">
+  <a href="index.html">Dashboard</a>
+  <a href="menu.html" class="active">Menu</a>
+  <a href="order.html">Take Order</a>
+  <a href="bill.html">Billing</a>
+  <a href="history.html">Order History</a>
+  <a href="settings.html">Settings</a>
+  <button class="logout" onclick="logout()">Logout</button>
+  <button class="order-now" onclick="goToOrder()">
+  Order Now →
+</button>
+
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+
+  <h1>Menu</h1>
+
+  <div class="menu-grid">
+
+    <!-- ESPRESSO -->
+    <div class="menu-card">
+      <img src="images/espresso.jpg" class="menu-img">
+      <h3>Espresso</h3>
+      <p>Strong coffee shot</p>
+      <span>₹80</span>
+      <button onclick="addItem('Espresso',80)">Add</button>
+    </div>
+
+    <!-- CAPPUCCINO -->
+    <div class="menu-card">
+      <img src="images/cappuccino.jpg" class="menu-img">
+      <h3>Cappuccino</h3>
+      <p>Milk foam coffee</p>
+      <span>₹120</span>
+      <button onclick="addItem('Cappuccino',120)">Add</button>
+    </div>
+
+    <!-- LATTE -->
+    <div class="menu-card">
+      <img src="images/latte.jpg" class="menu-img">
+      <h3>Latte</h3>
+      <p>Milk based coffee</p>
+      <span>₹130</span>
+      <button onclick="addItem('Latte',130)">Add</button>
+    </div>
+
+    <!-- COLD COFFEE -->
+    <div class="menu-card">
+      <img src="images/coldcoffee.jpg" class="menu-img">
+      <h3>Cold Coffee</h3>
+      <p>Chilled creamy coffee</p>
+      <span>₹150</span>
+      <button onclick="addItem('Cold Coffee',150)">Add</button>
+    </div>
+
+    <!-- TEA -->
+    <div class="menu-card">
+      <img src="images/tea.jpg" class="menu-img">
+      <h3>Masala Tea</h3>
+      <p>Indian style tea</p>
+      <span>₹40</span>
+      <button onclick="addItem('Masala Tea',40)">Add</button>
+    </div>
+
+    <!-- GREEN TEA -->
+    <div class="menu-card">
+      <img src="images/greentea.jpg" class="menu-img">
+      <h3>Green Tea</h3>
+      <p>Healthy herbal tea</p>
+      <span>₹60</span>
+      <button onclick="addItem('Green Tea',60)">Add</button>
+    </div>
+
+    <!-- SANDWICH -->
+    <div class="menu-card">
+      <img src="images/sandwich.jpg" class="menu-img">
+      <h3>Veg Sandwich</h3>
+      <p>Grilled sandwich</p>
+      <span>₹90</span>
+      <button onclick="addItem('Veg Sandwich',90)">Add</button>
+    </div>
+
+    <!-- FRIES -->
+    <div class="menu-card">
+      <img src="images/fries.jpg" class="menu-img">
+      <h3>French Fries</h3>
+      <p>Crispy fries</p>
+      <span>₹100</span>
+      <button onclick="addItem('French Fries',100)">Add</button>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="menu-card">
+      <img src="images/pizza.jpg" class="menu-img">
+      <h3>Veg Pizza</h3>
+      <p>Cheese loaded pizza</p>
+      <span>₹220</span>
+      <button onclick="addItem('Veg Pizza',220)">Add</button>
+    </div>
+
+    <!-- PASTA -->
+    <div class="menu-card">
+      <img src="images/pasta.jpg" class="menu-img">
+      <h3>White Sauce Pasta</h3>
+      <p>Creamy pasta</p>
+      <span>₹200</span>
+      <button onclick="addItem('Pasta',200)">Add</button>
+    </div>
+
+    <!-- BURGER -->
+    <div class="menu-card">
+      <img src="images/burger.jpg" class="menu-img">
+      <h3>Veg Burger</h3>
+      <p>Cheesy burger</p>
+      <span>₹120</span>
+      <button onclick="addItem('Veg Burger',120)">Add</button>
+    </div>
+
+    <!-- MOMOS -->
+    <div class="menu-card">
+      <img src="images/momos.jpg" class="menu-img">
+      <h3>Veg Momos</h3>
+      <p>Steamed momos</p>
+      <span>₹110</span>
+      <button onclick="addItem('Veg Momos',110)">Add</button>
+    </div>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

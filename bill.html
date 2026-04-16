@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bill | CafePOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadBill()">
+
+<div class="bill-box">
+  <h2>☕ CafePOS</h2>
+  <p>Date: <span id="date"></span></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody id="billBody"></tbody>
+  </table>
+
+  <h3>Total: <span id="grandTotal">₹0</span></h3>
+
+  <button onclick="window.print()">🖨 Print</button>
+  <button onclick="clearCart()">✔ Complete Order</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("date").innerText =
+    new Date().toLocaleString();
+</script>
+
+</body>
+</html>

@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafe POS Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body onload="protect()">
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">☕ CafePOS</h2>
+
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Take Order</a>
+    <a href="bill.html">Billing</a>
+    <a href="history.html">Order History</a>
+    <a href="report.html">Reports</a>
+    <a href="staff.html">Staff</a>
+    <a href="settings.html">Settings</a>
+
+    <button class="logout" onclick="logout()">Logout</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <h1>Dashboard</h1>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Today Sales</h3>
+        <p>₹ 4,250</p>
+      </div>
+      <div class="stat-card">
+        <h3>Total Orders</h3>
+        <p>38</p>
+      </div>
+      <div class="stat-card">
+        <h3>Active Staff</h3>
+        <p>4</p>
+      </div>
+    </div>
+
+    <!-- QUICK ACTIONS -->
+    <div class="quick">
+      <a href="order.html" class="action">➕ New Order</a>
+      <a href="bill.html" class="action">🧾 Generate Bill</a>
+      <a href="menu.html" class="action">📋 View Menu</a>
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

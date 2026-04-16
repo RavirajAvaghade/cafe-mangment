@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadOrder()">
+
+<h2>Your Order</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Qty</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody id="orderBody"></tbody>
+</table>
+<body class="order-page">
+  <div class="order-box">
+
+<h3>Total: ₹<span id="total"></span></h3>
+
+<button onclick="goPayment()">Proceed to Payment</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
